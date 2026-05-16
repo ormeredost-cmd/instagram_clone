@@ -1,0 +1,6 @@
+{
+  "name": "Instagram Clone",
+  "description": "A responsive Instagram login page clone mimicking the dark theme UI for both mobile and desktop screens.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
