@@ -12,7 +12,7 @@ const InstagramLogo = ({ className = "w-16 h-16" }: { className?: string }) => (
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#121212] font-sans flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-[#101b22] font-sans flex flex-col justify-center items-center">
        {/* Main Content */}
        <main className="flex-grow flex w-full max-w-[1200px] items-center justify-center p-4 lg:p-0">
           <div className="flex w-full h-full lg:h-[700px] items-center justify-center">
@@ -27,12 +27,12 @@ export default function App() {
                {/* Collage Representation */}
                <div className="relative w-full h-[450px] mt-2 flex justify-center items-center perspective-[1000px]">
                  {/* Left abstract image card */}
-                 <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[180px] h-[320px] rounded-3xl overflow-hidden shadow-2xl rotate-[-10deg] opacity-90 z-10 bg-gradient-to-tr from-pink-600 to-purple-600 border-[6px] border-[#121212]">
+                 <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[180px] h-[320px] rounded-3xl overflow-hidden shadow-2xl rotate-[-10deg] opacity-90 z-10 bg-gradient-to-tr from-pink-600 to-purple-600 border-[6px] border-[#101b22]">
                    <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1549468057-5b7fa1a41d7a?auto=format&fit=crop&q=80')] bg-cover bg-center mix-blend-overlay"></div>
                  </div>
                  
                  {/* Center phone frame */}
-                 <div className="relative w-[230px] h-[450px] rounded-[40px] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] z-30 border-[10px] border-[#121212] bg-zinc-900">
+                 <div className="relative w-[230px] h-[450px] rounded-[40px] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)] z-30 border-[10px] border-[#101b22] bg-zinc-900">
                     <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80" alt="Selfie" className="w-full h-full object-cover" />
                     {/* Small UI overlays */}
                     <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm rounded-full px-2 py-1 text-[10px] flex gap-1">
@@ -47,10 +47,10 @@ export default function App() {
                  </div>
 
                  {/* Right image card */}
-                 <div className="absolute right-0 top-1/2 -translate-y-[40%] w-[160px] h-[280px] rounded-3xl overflow-hidden shadow-2xl rotate-[12deg] opacity-90 z-20 border-[6px] border-[#121212] bg-zinc-800">
+                 <div className="absolute right-0 top-1/2 -translate-y-[40%] w-[160px] h-[280px] rounded-3xl overflow-hidden shadow-2xl rotate-[12deg] opacity-90 z-20 border-[6px] border-[#101b22] bg-[#1a2730]">
                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80" alt="Friend" className="w-full h-full object-cover" />
-                   <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-green-500 border-2 border-[#121212] flex items-center justify-center text-white text-xs">★</div>
-                   <div className="absolute -bottom-4 -left-4 w-12 h-12 rounded-full overflow-hidden border-4 border-[#121212]">
+                   <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-green-500 border-2 border-[#101b22] flex items-center justify-center text-white text-xs">★</div>
+                   <div className="absolute -bottom-4 -left-4 w-12 h-12 rounded-full overflow-hidden border-4 border-[#101b22]">
                      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80" alt="Avatar" className="w-full h-full object-cover" />
                    </div>
                  </div>
@@ -58,38 +58,38 @@ export default function App() {
              </div>
 
              {/* Right Column (Login Form) */}
-             <div className="w-full lg:w-1/2 flex flex-col items-center lg:pl-20 h-auto my-auto max-w-[400px] lg:max-w-none">
-                <div className="w-full lg:w-[350px]">
+             <div className="w-full lg:w-1/2 flex flex-col items-center lg:pl-16 h-auto my-auto lg:max-w-[400px]">
+                <div className="w-full h-full flex flex-col justify-start pt-6 lg:pt-0 lg:w-[350px]">
                   
                   {/* Mobile Language Selector */}
-                  <div className="flex justify-center items-center text-[#a8a8a8] text-sm mb-16 lg:hidden">
+                  <div className="flex justify-center items-center text-[#8e9da5] text-[13px] font-medium mb-16 lg:hidden">
                     <span>English (US)</span>
-                    <ChevronDown size={14} className="ml-1 opacity-70" />
+                    <ChevronDown size={14} className="ml-1 opacity-80" strokeWidth={2.5} />
                   </div>
 
                   {/* Logo/Title */}
-                  <div className="flex justify-center lg:justify-start mb-10 w-full">
+                  <div className="flex justify-center lg:justify-start mb-12 w-full">
                     {/* Mobile Logo */}
-                    <div className="lg:hidden">
-                       <InstagramLogo className="w-[72px] h-[72px]" />
+                    <div className="lg:hidden flex justify-center w-full">
+                       <InstagramLogo className="w-[60px] h-[60px]" />
                     </div>
                     {/* Desktop Title */}
                     <h2 className="hidden lg:block text-2xl font-bold self-start w-full text-left text-[#f5f5f5] tracking-wide">Log in to Instagram</h2>
                   </div>
 
-                  {/* Mobile 'Username' text for placeholder differences */}
-                  <form className="w-full flex flex-col gap-3.5">
+                  {/* Form */}
+                  <form className="w-full flex flex-col gap-3">
                     {/* Input 1 */}
                     <div className="relative group">
                        <input 
                          type="text" 
                          id="id_input"
-                         className="peer w-full bg-transparent border border-[#363636] focus:border-[#a8a8a8] rounded-xl px-4 pt-[18px] pb-2 text-sm text-[#f5f5f5] hover:border-[#a8a8a8] outline-none transition-colors" 
+                         className="peer w-full bg-transparent border border-[#3b4a54] focus:border-[#8e9da5] rounded-xl px-4 py-[14px] pt-[20px] pb-[8px] text-[15px] text-[#f5f5f5] hover:border-[#8e9da5] outline-none transition-colors" 
                          placeholder=" " 
                        />
                        <label 
                          htmlFor="id_input" 
-                         className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a8a8a8] text-sm transition-all duration-150 peer-focus:top-[14px] peer-focus:text-[11px] peer-[:not(:placeholder-shown)]:top-[14px] peer-[:not(:placeholder-shown)]:text-[11px] pointer-events-none"
+                         className="absolute left-4 top-1/2 -translate-y-1/2 text-[#8596a0] text-[15px] transition-all duration-150 peer-focus:top-[12px] peer-focus:text-[11px] peer-[:not(:placeholder-shown)]:top-[12px] peer-[:not(:placeholder-shown)]:text-[11px] pointer-events-none"
                        >
                          <span className="lg:hidden">Username, email or mobile number</span>
                          <span className="hidden lg:inline">Mobile number, username or email address</span>
@@ -101,12 +101,12 @@ export default function App() {
                        <input 
                          type="password" 
                          id="password_input"
-                         className="peer w-full bg-transparent border border-[#363636] focus:border-[#a8a8a8] rounded-xl px-4 pt-[18px] pb-2 text-sm text-[#f5f5f5] hover:border-[#a8a8a8] outline-none transition-colors" 
+                         className="peer w-full bg-transparent border border-[#3b4a54] focus:border-[#8e9da5] rounded-xl px-4 py-[14px] pt-[20px] pb-[8px] text-[15px] text-[#f5f5f5] hover:border-[#8e9da5] outline-none transition-colors" 
                          placeholder=" " 
                        />
                        <label 
                          htmlFor="password_input" 
-                         className="absolute left-4 top-1/2 -translate-y-1/2 text-[#a8a8a8] text-sm transition-all duration-150 peer-focus:top-[14px] peer-focus:text-[11px] peer-[:not(:placeholder-shown)]:top-[14px] peer-[:not(:placeholder-shown)]:text-[11px] pointer-events-none"
+                         className="absolute left-4 top-1/2 -translate-y-1/2 text-[#8596a0] text-[15px] transition-all duration-150 peer-focus:top-[12px] peer-focus:text-[11px] peer-[:not(:placeholder-shown)]:top-[12px] peer-[:not(:placeholder-shown)]:text-[11px] pointer-events-none"
                        >
                          Password
                        </label>
@@ -114,13 +114,13 @@ export default function App() {
                     
                     <button 
                       type="submit"
-                      className="w-full bg-[#0064e0] lg:bg-[#184a86] lg:hover:bg-[#185fa0] text-[#f5f5f5] font-semibold lg:font-medium rounded-full py-[10px] mt-1 hover:bg-[#0057c2] transition-colors"
+                      className="w-full bg-[#0064e0] lg:bg-[#184a86] lg:hover:bg-[#185fa0] text-[#f5f5f5] font-[600] rounded-full py-[11px] mt-2 mb-1 hover:bg-[#0057c2] transition-colors text-[15px]"
                     >
                       Log in
                     </button>
                     
-                    <div className="text-center mt-2 lg:mt-3">
-                       <button type="button" className="text-[#f5f5f5] text-sm hover:underline font-medium">
+                    <div className="text-center mt-3">
+                       <button type="button" className="text-[#f5f5f5] text-[14px] font-medium lg:hover:underline">
                          <span className="lg:hidden">Forgot password?</span>
                          <span className="hidden lg:inline">Forgotten password?</span>
                        </button>
@@ -128,31 +128,31 @@ export default function App() {
 
                     {/* Desktop extra login options */}
                     <div className="hidden lg:flex flex-col items-center mt-4 w-full gap-5">
-                       <button type="button" className="text-[#f5f5f5] bg-transparent border border-[#363636] w-full py-[10px] rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-[#1c1c1c] transition-colors">
+                       <button type="button" className="text-[#f5f5f5] bg-transparent border border-[#3b4a54] w-full py-[10px] rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-[#1c2a33] transition-colors">
                          <Facebook size={20} className="text-[#1877f2] fill-[#1877f2]" />
                          Log in with Facebook
                        </button>
 
-                       <button type="button" className="text-[#f5f5f5] bg-transparent border border-[#363636] w-full py-[10px] rounded-full font-semibold hover:bg-[#1c1c1c] transition-colors">
+                       <button type="button" className="text-[#0064e0] bg-transparent border border-[#0064e0] w-full py-[10px] rounded-full font-semibold hover:bg-[#1c2a33] transition-colors">
                          Create new account
                        </button>
                     </div>
                   </form>
 
                   {/* Mobile 'Create account' button */}
-                  <div className="mt-auto pt-24 lg:hidden w-full flex flex-col items-center">
-                     <button type="button" className="w-full bg-transparent border border-[#0064e0] text-[#0064e0] font-medium text-[15px] rounded-full py-[10px] hover:bg-[#1c1c1c] transition-colors">
+                  <div className="mt-28 lg:hidden w-full flex flex-col items-center">
+                     <button type="button" className="w-full bg-transparent border border-[#4d8bbb] text-[#69a1c9] font-medium text-[15px] rounded-full py-[10px] transition-colors">
                        Create new account
                      </button>
                      
-                     <div className="mt-8 flex justify-center text-[#a8a8a8] gap-1 items-center">
-                       <Infinity size={22} className="opacity-80" />
+                     <div className="mt-10 flex justify-center text-[#8e9da5] gap-1 items-center pb-6">
+                       <Infinity size={22} className="opacity-90" />
                        <span className="text-[14px] font-medium tracking-wide">Meta</span>
                      </div>
                   </div>
 
                   {/* Desktop Meta text */}
-                  <div className="hidden lg:flex mt-10 justify-center text-[#f5f5f5] gap-1.5 items-center">
+                  <div className="hidden lg:flex mt-10 justify-center text-[#8e9da5] gap-1.5 items-center">
                     <Infinity size={20} />
                     <span className="text-[14px] font-medium tracking-wide">Meta</span>
                   </div>
